@@ -1,0 +1,20 @@
+<!-- add_faq.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add FAQ</title>
+</head>
+
+<body>
+    <h1>Add a New FAQ</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }} <!-- Renders the form fields -->
+        <button type="submit">Add FAQ</button>
+    </form>
+</body>
+
+</html>
